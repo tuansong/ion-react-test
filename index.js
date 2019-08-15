@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
-import Test1 from './src/components/Test1';
-import Test2 from './src/components/Test2';
-import Test3 from './src/components/Test3';
-import Test4 from './src/components/Test4';
+import Test1 from './src/components/Test1/Test1';
+import Test2 from './src/components/Test2/Test2';
+import Test3 from './src/components/Test3/Test3';
+import Test4 from './src/components/Test4/Test4';
 
 class App extends React.Component {
   render() {
