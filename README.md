@@ -1,6 +1,6 @@
-# vue-test
+# react-test
 
-> A Vuejs Test
+> A React Test
 
 ## Test requirements
 
