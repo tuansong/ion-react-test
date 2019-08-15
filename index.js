@@ -1,15 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-
-// main app
-import App from "./containers/App";
-
 import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
-import User from "./components/User";
-import Contact from "./components/Contact";
+import Test1 from './src/components/Test1';
+import Test2 from './src/components/Test2';
+import Test3 from './src/components/Test3';
+import Test4 from './src/components/Test4';
 
-class Test extends React.Component {
+class App extends React.Component {
   render() {
     return (
       <Router>
@@ -37,12 +35,15 @@ class Test extends React.Component {
               </li>
             </ul>
           </div>
-          <Route path="/users" component={User} />
-          <Route path="/contact" component={Contact} />
+          
+          <Route path="/test1" component={Test1} />
+          <Route path="/test2" component={Test2} />
+          <Route path="/test3" component={Test3} />
+          <Route path="/test4" component={Test4} />
         </div>
       </Router>
     );
   }
 }
 
-ReactDOM.render(<Test />, document.getElementById("app"));
+ReactDOM.render(<App />, document.getElementById("app"));
