@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import './Test2.css';
+import "./Test2.css";
 
 export default class Test2 extends Component {
   constructor(props) {
@@ -26,8 +26,8 @@ export default class Test2 extends Component {
   render() {
     return (
       <div style={{ width: 800, margin: "0 auto" }}>
-        <div className="row mb-1">
-          <p className="col-sm-8">
+        <div className="mb-1">
+          <p>
             Implement input, and datepicker, color picker knowing that these
             component get initial data from server and be able to retrieve new
             data as user change it.

@@ -67,9 +67,6 @@
   a, a:visited, a:focus {
     text-decoration: none;
   }
-  a {
-    color: #666;
-  }
   table.ui-accordion .body {
     display: none;
   }

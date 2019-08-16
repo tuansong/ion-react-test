@@ -40,7 +40,7 @@ export default class Test1 extends Component {
     })
 
     return (
-      <div className="table-wrap coltype" style={{ width: '50%'}}>
+      <div className="table-wrap coltype" style={{ width: '50%', margin: '0 auto'}}>
         <h4>Render a datatable using test1.json</h4>
         <p>Note: the amount of Column can be changed dynamically. </p>
         <input type="text" className="form-control m-0" />

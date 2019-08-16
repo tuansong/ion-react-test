@@ -12,7 +12,7 @@ export default class Test3 extends Component {
   render() {
     return (
       <div style={{ width: 800, margin: "0 auto" }}>
-        <div className="row mb-1">
+        <div className="row mb-1 text-center">
           <p className="col-sm-8">Render a dynamic form.</p>
         </div>
         {/* <Your code goes here! */}
