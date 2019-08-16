@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import jsonData from '../JsonFiles/test1.json'
-import './Test1.css';
+import jsonData from "../JsonFiles/test1.json";
+import "./Test1.css";
 
 export default class Test1 extends Component {
   constructor(props) {
@@ -21,29 +21,55 @@ export default class Test1 extends Component {
 
   componentDidMount() {
     const newData = {
-        columns: [...jsonData.columns],
-        originalRows: [...jsonData.rows],
-        rows: []
-    }
+      columns: [...jsonData.columns],
+      originalRows: [...jsonData.rows],
+      rows: []
+    };
     this.setState({
-        data: newData
-    })
+      data: newData
+    });
   }
 
   rows() {
-    return this.state.data || []
+    return this.state.data || [];
   }
 
   render() {
-    const columns = this.state.data.columns && this.state.data.columns.map( (col, index) => {
-        return <th scope="col" key={col.field}>{col.label}</th>
-    })
+    const columns =
+      this.state.data.columns &&
+      this.state.data.columns.map((col, index) => {
+        return (
+          <th scope="col" key={col.field}>
+            {col.label}
+          </th>
+        );
+      });
 
     return (
-      <div className="table-wrap coltype" style={{ width: '50%', margin: '0 auto'}}>
+      <div
+        className="table-wrap coltype"
+        style={{ width: "50%", margin: "0 auto" }}
+      >
         <h4>Render a datatable using test1.json</h4>
         <p>Note: the amount of Column can be changed dynamically. </p>
-        <input type="text" className="form-control m-0" />
+
+        <div className="form-group">
+          <label>Type</label>
+          <input type="text" className="" />
+          <label>Q&A</label>
+          <input type="name" className="" />
+          <button type="submit" className="btn btn-primary">
+            Add
+          </button>
+        </div>
+        <br />
+        <div className="form-group">
+          <input type="text" className="" style={{ width: '500' }} />
+          <button type="submit" className="btn btn-primary">
+            Search
+          </button>
+        </div>
+        {/* <input type="text" className="form-control m-0" /> */}
         <table className="table ui-accordion">
           <caption />
           <colgroup>
@@ -52,9 +78,7 @@ export default class Test1 extends Component {
             <col style={{ width: 30 }} />
           </colgroup>
           <thead>
-            <tr>
-              {columns}
-            </tr>
+            <tr>{columns}</tr>
           </thead>
           <tbody>
             <tr className="head">

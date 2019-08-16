@@ -39,7 +39,12 @@ Render a form with the following requirements, using components have implemented
 
 ### **Test 4**
 
-Render a Chart (https://chartkick.com/react
+Render a Chart (https://chartkick.com/vue)
+
+- [ ] Use Line chart (Multiple series)
+- [ ] Calculate Average Value, Total value 
+  ex) Teamwork: 3, Benefit:4, Career:2 ==> Total: 9, Average: 3
+
 ## Build Setup
 
 ``` bash
